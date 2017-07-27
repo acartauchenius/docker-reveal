@@ -1,0 +1,9 @@
+version: '2'
+services:
+    revealjs:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: my_reveal_presentation
+        ports:
+            - 8000:8000
